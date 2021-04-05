@@ -12,7 +12,7 @@
       <paths name="pi@192.168.1.1:22 password">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/pycharm_project_734" local="$PROJECT_DIR$" />
+            <mapping deploy="/tmp/pycharm_project_886" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
