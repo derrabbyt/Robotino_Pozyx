@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 import paho.mqtt.client as mqtt
 
-
 topic_pos = "position_data"
 topic_sensor_data = "sensor_data"
-f = open("Test.txt", "w")
 
 
 def on_connect(client, userdata, flags, rc):
@@ -13,7 +11,6 @@ def on_connect(client, userdata, flags, rc):
     #client.subscribe(topic_sensor_data)
 
 def on_message(client, userdata, msg):
-    f.write(str(msg.payload))
     print(str(msg.payload))
 
 
