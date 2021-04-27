@@ -1,0 +1,15 @@
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.exe
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.deps.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.runtimeconfig.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.runtimeconfig.dev.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.dll
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.pdb
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.csprojAssemblyReference.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.AssemblyInfoInputs.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.AssemblyInfo.cs
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.csproj.CoreCompileInputs.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.csproj.CopyComplete
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.dll
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.pdb
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.genruntimeconfig.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\M2Mqtt.dll

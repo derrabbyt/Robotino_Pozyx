@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iQPbijizwA3ka/6LrbkwgxeNSZvJQEa/6w6isIz8lJ/Nu5TR+nA3TIBhp4XBoy2LSvMv1QQ7DITMphwFhDKPhg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\tryudp3\\tryudp3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Florian\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}

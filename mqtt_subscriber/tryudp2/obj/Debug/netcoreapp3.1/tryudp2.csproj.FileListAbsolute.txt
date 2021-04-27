@@ -1,0 +1,13 @@
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.exe
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.deps.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.runtimeconfig.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.runtimeconfig.dev.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.dll
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.pdb
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.csprojAssemblyReference.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.AssemblyInfoInputs.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.AssemblyInfo.cs
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.csproj.CoreCompileInputs.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.dll
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.pdb
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.genruntimeconfig.cache
