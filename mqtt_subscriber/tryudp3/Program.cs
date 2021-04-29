@@ -14,18 +14,21 @@ namespace tryudp3
         private static void ConfigServer()
         {
 
-            IPAddress udp_ip = IPAddress.Parse("172.17.240.174");
-            int udp_port_emission = 9180;
+            IPAddress udp_ip = IPAddress.Parse("127.0.0.1");
+            int udp_port_emission = 9184;
 
             IPEndPoint ipe = new IPEndPoint(udp_ip, udp_port_emission);
 
-            Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
-            byte[] message = getMessageToSend(0, 255, 0, -1759, 0, -255, 0, 8000, 0);
-
+            Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            
             s.Connect(ipe);
+
+            byte[] message = getMessageToSend(0, 1, 1, 1, 0, 0, 0, 0, 0); //KEEP first value 0!!!
+
+            
             s.SendTo(message, 0, message.Length, SocketFlags.None, ipe);
 
+            s.Close();
         }
 
         private static byte[] getMessageToSend(int ID_Message, int input0, int input1, int input2, int input3, int
@@ -65,22 +68,20 @@ namespace tryudp3
                 byte Byte0 = ((byte)InputTable[i]);
                 checksum += Byte0;
 
-                valuesToString += (Convert.ToString((Hex_Char[(Byte0 / 16)]) + Convert.ToString(Hex_Char[(Byte0 % 16)]) + Convert.ToString(Hex_Char[(Byte1 / 16)]) + Convert.ToString(Hex_Char[(Byte1 % 16)]) + Convert.ToString(Hex_Char[(Byte2 / 16)]) + Convert.ToString(Hex_Char[(Byte2 % 16)]) + Convert.ToString(Hex_Char[(Byte3 / 16)]) + Convert.ToString(Hex_Char[(Byte3 % 16)])));
+                valuesToString += (Convert.ToString(Hex_Char[(Byte0 / 16)]) + Convert.ToString(Hex_Char[(Byte0 % 16)]) + Convert.ToString(Hex_Char[(Byte1 / 16)]) + Convert.ToString(Hex_Char[(Byte1 % 16)]) + Convert.ToString(Hex_Char[(Byte2 / 16)]) + Convert.ToString(Hex_Char[(Byte2 % 16)]) + Convert.ToString(Hex_Char[(Byte3 / 16)]) + Convert.ToString(Hex_Char[(Byte3 % 16)]));
                
             }
 
             checksum = 255 - (checksum % 256);
-            int checksumToString = Hex_Char[((int)(checksum / 16))] + Hex_Char[((int)(checksum % 16))];
+            string checksumToString = Convert.ToString(Hex_Char[checksum / 16]) + Convert.ToString(Hex_Char[checksum % 16]);
             messageToSendToRobotinoView += checksumToString + valuesToString;
-            Console.WriteLine(messageToSendToRobotinoView.Length);
-            return StringToByteArrayFastest(messageToSendToRobotinoView);
-
-            
+            Console.WriteLine(messageToSendToRobotinoView);
+            return StringToByteArrayFastest(messageToSendToRobotinoView);     
         }
-        public static byte[] StringToByteArrayFastest(string hex)
+        public static byte[] StringToByteArrayFastest(string hex) //converts a string in hex to a byte array
         {
-            //if (hex.Length % 2 == 1)
-            //    throw new Exception("The binary key cannot have an odd number of digits");
+            if (hex.Length % 2 == 1)
+                throw new Exception("The binary key cannot have an odd number of digits");
 
             byte[] arr = new byte[hex.Length >> 1];
 
@@ -101,6 +102,6 @@ namespace tryudp3
             //return val - (val < 58 ? 48 : 87);
             //Or the two combined, but a bit slower:
             return val - (val < 58 ? 48 : (val < 97 ? 55 : 87));
-        }
+        } //used by the method above
     }
 }

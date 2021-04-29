@@ -2,10 +2,6 @@
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 
-
-
-
-
 namespace Mqtt.Thingsboard
 {
     class Program
@@ -19,7 +15,7 @@ namespace Mqtt.Thingsboard
 
     class client
     {
-        static MqttClient Client;
+        private static MqttClient Client;
         public static void Start()
         {
 

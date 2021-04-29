@@ -13,34 +13,22 @@ namespace tryudp2
     {
         static void Main(string[] args)
         {
-            SendMessage("172.17.240.174", "1");
+            ConfigServer();
         }
 
-        public static bool messageSent = false;
-
-        public static void SendCallback(IAsyncResult ar)
+        private static void ConfigServer()
         {
-            UdpClient u = (UdpClient)ar.AsyncState;
 
-            Console.WriteLine($"number of bytes sent: {u.EndSend(ar)}");
-            messageSent = true;
-        }
+            IPAddress udp_ip = IPAddress.Parse("127.0.0.1");
+            int udp_port_emission = 9180;
+            IPEndPoint ipe = new IPEndPoint(udp_ip, udp_port_emission);
+            Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            s.Connect(ipe);
 
-        static void SendMessage(string server, string message)
-        {
-            UdpClient u = new UdpClient();
+            byte[] message = getMessageToSend(1, 0, 1, 0, 1, 1, 0, 0,1);
 
-            byte[] sendBytes = Encoding.ASCII.GetBytes(message);
-
-            // send the message
-            // the destination is defined by the server name and port
-            u.BeginSend(sendBytes, sendBytes.Length, "192.168.18.10", 9180, new AsyncCallback(SendCallback), u);
-
-            // Do some work while we wait for the send to complete. For this example, we'll just sleep
-            while (!messageSent)
-            {
-                Thread.Sleep(100);
-            }
+            s.SendTo(message, 0, message.Length, SocketFlags.None, ipe);
+            s.Close();
         }
     }
 }
