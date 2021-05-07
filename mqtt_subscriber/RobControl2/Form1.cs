@@ -40,9 +40,15 @@ namespace RobControl
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            startPosition = currentPosition;
+            currentPosition = mqtt_client.CurrentPosition;
             startPosition = new Position(1,5);
             List<Node> path = AStar.FindPath(startPosition, new Position(20, 34));
+
+            for (int i = 0; i < path.Count; i++)
+            {
+                System.Diagnostics.Debug.WriteLine(path[i].WorldPosition.X);
+                System.Diagnostics.Debug.WriteLine(path[i].WorldPosition.Y);
+            }
         }
     }
 }

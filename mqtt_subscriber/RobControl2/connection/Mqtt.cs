@@ -12,7 +12,6 @@ namespace RobControl
     class Mqtt
     {
         private static MqttClient Client;
-        private static byte[] position;
         public Position CurrentPosition { get; set; }
         public Mqtt(string address)
         {
@@ -55,10 +54,23 @@ namespace RobControl
 
         public void Client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
         {
-            Console.WriteLine(e.Message);
-            int[] bytesAsInts = Array.ConvertAll(e.Message, c => (int)c);
-            CurrentPosition = new Position(bytesAsInts[0], bytesAsInts[1]);
-            
+            string str = System.Text.Encoding.Default.GetString(e.Message);
+
+            str = str.Replace("[", "");
+            str = str.Replace("]", "");
+            str = str.Replace(", ", " ");
+            string[] coords = str.Split(" ");
+            int x = Convert.ToInt32(coords[0]);
+            int y = Convert.ToInt32(coords[1]);
+            CurrentPosition = new Position(x, y);
+
+
+            //int[] bytesAsInts = Array.ConvertAll(e.Message, c => (int)c);
+            //System.Diagnostics.Debug.WriteLine(bytesAsInts[0]);
+            //System.Diagnostics.Debug.WriteLine(bytesAsInts[1]);
+
+            //CurrentPosition = new Position(bytesAsInts[0], bytesAsInts[1]);
+
         }
 
 
