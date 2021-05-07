@@ -8,14 +8,14 @@ namespace tryudp3
     {
         static void Main(string[] args)
         {
-            ConfigServer();
+            Config();
         }
 
-        private static void ConfigServer()
+        private static void Config()
         {
 
             IPAddress udp_ip = IPAddress.Parse("127.0.0.1");
-            int udp_port_emission = 9184;
+            int udp_port_emission = 9180;
 
             IPEndPoint ipe = new IPEndPoint(udp_ip, udp_port_emission);
 
@@ -23,12 +23,15 @@ namespace tryudp3
             
             s.Connect(ipe);
 
-            byte[] message = getMessageToSend(0, 1, 1, 1, 0, 0, 0, 0, 0); //KEEP first value 0!!!
-
-            
-            s.SendTo(message, 0, message.Length, SocketFlags.None, ipe);
-
+            byte[] message = getMessageToSend(0, 1, 1, 1, 0, 0, 0, 0, 0); //KEEP first value 0!!! 
             s.Close();
+        }
+
+        private static void Send(IPEndPoint ipe, Socket s, int ID_Message, int input0, int input1, int input2, int input3, int
+            input4, int input5, int input6, int input7)
+        {
+            byte[] message = getMessageToSend(0, 1, 1, 1, 0, 0, 0, 0, 0);
+            s.SendTo(message, 0, message.Length, SocketFlags.None, ipe);
         }
 
         private static byte[] getMessageToSend(int ID_Message, int input0, int input1, int input2, int input3, int

@@ -1,0 +1,15 @@
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.exe
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.deps.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.runtimeconfig.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.runtimeconfig.dev.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.dll
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.pdb
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.csprojAssemblyReference.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.Form1.resources
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.csproj.GenerateResource.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.AssemblyInfoInputs.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.AssemblyInfo.cs
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.csproj.CoreCompileInputs.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.dll
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.pdb
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.genruntimeconfig.cache
