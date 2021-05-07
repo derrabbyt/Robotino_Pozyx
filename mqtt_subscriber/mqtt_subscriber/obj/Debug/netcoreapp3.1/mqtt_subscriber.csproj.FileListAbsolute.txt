@@ -13,3 +13,18 @@ C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netc
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.pdb
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.genruntimeconfig.cache
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\M2Mqtt.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.exe
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.deps.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.runtimeconfig.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.runtimeconfig.dev.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\mqtt_subscriber.pdb
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\bin\Debug\netcoreapp3.1\M2Mqtt.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.csprojAssemblyReference.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.AssemblyInfoInputs.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.AssemblyInfo.cs
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.csproj.CoreCompileInputs.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.csproj.CopyComplete
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.pdb
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\mqtt_subscriber\obj\Debug\netcoreapp3.1\mqtt_subscriber.genruntimeconfig.cache

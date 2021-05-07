@@ -11,3 +11,16 @@ C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.dll
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.pdb
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.genruntimeconfig.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.exe
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.deps.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.runtimeconfig.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.runtimeconfig.dev.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\bin\Debug\netcoreapp3.1\tryudp2.pdb
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.csprojAssemblyReference.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.AssemblyInfoInputs.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.AssemblyInfo.cs
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.csproj.CoreCompileInputs.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.pdb
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp2\obj\Debug\netcoreapp3.1\tryudp2.genruntimeconfig.cache

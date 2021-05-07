@@ -13,3 +13,18 @@ C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\A
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.dll
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.pdb
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.genruntimeconfig.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.exe
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.deps.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.runtimeconfig.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.runtimeconfig.dev.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\bin\Debug\netcoreapp3.1\Algo.pdb
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.csprojAssemblyReference.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.Form1.resources
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.csproj.GenerateResource.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.AssemblyInfoInputs.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.AssemblyInfo.cs
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.csproj.CoreCompileInputs.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.pdb
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\Algo\obj\Debug\netcoreapp3.1\Algo.genruntimeconfig.cache

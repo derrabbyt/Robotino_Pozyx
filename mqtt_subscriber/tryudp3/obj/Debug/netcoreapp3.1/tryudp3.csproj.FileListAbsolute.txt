@@ -11,3 +11,16 @@ C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.pdb
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.genruntimeconfig.cache
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.csprojAssemblyReference.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\bin\Debug\netcoreapp3.1\tryudp3.exe
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\bin\Debug\netcoreapp3.1\tryudp3.deps.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\bin\Debug\netcoreapp3.1\tryudp3.runtimeconfig.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\bin\Debug\netcoreapp3.1\tryudp3.runtimeconfig.dev.json
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\bin\Debug\netcoreapp3.1\tryudp3.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\bin\Debug\netcoreapp3.1\tryudp3.pdb
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.csprojAssemblyReference.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.AssemblyInfoInputs.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.AssemblyInfo.cs
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.csproj.CoreCompileInputs.cache
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.dll
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.pdb
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\tryudp3\obj\Debug\netcoreapp3.1\tryudp3.genruntimeconfig.cache

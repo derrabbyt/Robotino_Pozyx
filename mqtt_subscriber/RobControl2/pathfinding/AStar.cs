@@ -7,13 +7,13 @@ namespace RobControl
     class AStar
     {
         static Position[] TurningPoints;
-        static Node[,] grid = Grid.CreateGrid();
-        static int proportion = 200;
+        static Node[,] grid;
         
-        public static List<Node> FindPath(Position startPos, Position targetPos)
+        public static void FindPath(Position startPos, Position targetPos)
         {
-            Node startNode = grid[(startPos.X / proportion), (startPos.Y / proportion)];
-            Node targetNode = grid[(targetPos.X / proportion), (targetPos.Y / proportion)];
+            grid  = Grid.CreateGrid();
+            Node startNode = grid[startPos.Y, startPos.X];
+            Node targetNode = grid[targetPos.X, targetPos.Y];
 
             List<Node> openSet = new List<Node>();
             HashSet<Node> closedSet = new HashSet<Node>();
@@ -21,44 +21,45 @@ namespace RobControl
 
             while (openSet.Count > 0)
             {
-                Node currentNode = openSet[0];
-                for (int i = 0; i < openSet.Count; i++)
+                Node node = openSet[0];
+                for (int i = 1; i < openSet.Count; i++)
                 {
-                    if (openSet[i].fCost < currentNode.fCost || openSet[i].fCost == currentNode.fCost && openSet[i].hCost < currentNode.hCost)
+                    if (openSet[i].fCost < node.fCost || openSet[i].fCost == node.fCost)
                     {
-                        currentNode = openSet[i];
+                        if (openSet[i].hCost < node.hCost)
+                            node = openSet[i];
                     }
                 }
-                openSet.Remove(currentNode);
-                closedSet.Add(currentNode);
 
-                if (currentNode == targetNode)
+                openSet.Remove(node);
+                closedSet.Add(node);
+
+                if (node == targetNode)
                 {
-                    return(RetracePath(startNode, targetNode));
+                    RetracePath(startNode, targetNode);
+                    return;
                 }
 
-                foreach (Node neighbour in Grid.GetNeighbours(currentNode))
+                foreach (Node neighbour in Grid.GetNeighbours(node))
                 {
                     if (!neighbour.Walkable || closedSet.Contains(neighbour))
                     {
                         continue;
                     }
 
-                    int newMovementCostToNeighbour = currentNode.gCost + GetDistance(currentNode, neighbour);
-                    if(newMovementCostToNeighbour< neighbour.gCost || !openSet.Contains(neighbour))
+                    int newCostToNeighbour = node.gCost + GetDistance(node, neighbour);
+                    if (newCostToNeighbour < neighbour.gCost || !openSet.Contains(neighbour))
                     {
-                        neighbour.gCost = newMovementCostToNeighbour;
+                        neighbour.gCost = newCostToNeighbour;
                         neighbour.hCost = GetDistance(neighbour, targetNode);
-                        neighbour.parent = currentNode;
+                        neighbour.parent = node;
 
                         if (!openSet.Contains(neighbour))
-                        {
                             openSet.Add(neighbour);
-                        }
                     }
                 }
             }
-            return null;
+
         }
 
         static List<Node> RetracePath(Node startNode, Node endNode)
@@ -78,13 +79,12 @@ namespace RobControl
 
         static int GetDistance(Node nodeA, Node nodeB)
         {
-            int distanceX = (int)MathF.Abs(nodeA.WorldPosition.X - nodeB.WorldPosition.X);
-            int distanceY = (int)MathF.Abs(nodeA.WorldPosition.Y - nodeB.WorldPosition.Y);
+            int dstX = Math.Abs(nodeA.WorldPosition.X - nodeB.WorldPosition.X);
+            int dstY = Math.Abs(nodeA.WorldPosition.Y - nodeB.WorldPosition.Y);
 
-            if (distanceX > distanceY)
-                return 14 * distanceY + 10 * (distanceX - distanceY);
-            return 14 * distanceX + 10 * (distanceY - distanceX);
-
+            if (dstX > dstY)
+                return 14 * dstY + 10 * (dstX - dstY);
+            return 14 * dstX + 10 * (dstY - dstX);
         }
     }
 }

@@ -9,13 +9,14 @@ namespace RobControl
 {
     class Grid
     {
-        static Bitmap img = new Bitmap(@"C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\111links.bmp"); //pic of roomlayout in 1:500 
+         //pic of roomlayout in 1:500 
         static Color pixel;    //obstacles are black in the pic
-
+        static Bitmap img;
         public static Node[,] CreateGrid() //pfusch it in
         {
+           img = new Bitmap(@"C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\111links.bmp");
             Node[,] grid = new Node[img.Width, img.Height];
-
+            
             for (int i = 0; i < img.Width; i++)
             {
                 for (int j = 0; j < img.Height; j++)
@@ -36,7 +37,7 @@ namespace RobControl
             List<Node> neighbours = new List<Node>();
             int x = node.WorldPosition.X;
             int y = node.WorldPosition.Y;
-        
+
 
             for (int i = x - 1; i <= x + 1; i++)    //checks the surrounding fields (max 8)
             {

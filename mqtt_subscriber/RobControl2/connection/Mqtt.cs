@@ -13,9 +13,11 @@ namespace RobControl
     {
         private static MqttClient Client;
         public Position CurrentPosition { get; set; }
-        public Mqtt(string address)
+        public string tag;
+        public Mqtt(string address, string _tag)
         {
             Client = new MqttClient(address);
+            tag = _tag;
         }
        
         public string Connect()
@@ -40,7 +42,7 @@ namespace RobControl
             }
             try
             {
-                Client.Subscribe(new string[] { "position_data" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
+                Client.Subscribe(new string[] { tag }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
 
             }
             catch (Exception ex)

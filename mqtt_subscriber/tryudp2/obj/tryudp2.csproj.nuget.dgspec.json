@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\tryudp2\\tryudp2.csproj": {}
+    "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\tryudp2\\tryudp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\tryudp2\\tryudp2.csproj": {
+    "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\tryudp2\\tryudp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\tryudp2\\tryudp2.csproj",
+        "projectUniqueName": "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\tryudp2\\tryudp2.csproj",
         "projectName": "tryudp2",
-        "projectPath": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\tryudp2\\tryudp2.csproj",
-        "packagesPath": "C:\\Users\\Florian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\tryudp2\\obj\\",
+        "projectPath": "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\tryudp2\\tryudp2.csproj",
+        "packagesPath": "C:\\Users\\manue\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\tryudp2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Florian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\manue\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,18 +52,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.13, 3.1.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

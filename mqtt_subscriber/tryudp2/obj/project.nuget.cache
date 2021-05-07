@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MMa64aSgQdXkbGJlcRzhkSwqCmmm21l0kxRMpDzB26cnvqzXSr3y8hPnJNPJD1OwMN+xGEOJ6n85PxqB9cmxgA==",
+  "dgSpecHash": "YnolN9z25jwC7jRvnA02YjXfPp4fHO+G0iJ0VoaK3A77T1xN2uWAADwV4BzwUHFaitxlmztDX0kN/3ubDuJzwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\tryudp2\\tryudp2.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Florian\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\tryudp2\\tryudp2.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

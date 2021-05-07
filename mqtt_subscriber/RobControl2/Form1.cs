@@ -14,7 +14,8 @@ namespace RobControl
     {
 
         //Robotinho robotinho;
-        Mqtt mqtt_client;
+        Mqtt mqtt_position;
+        Mqtt mqtt_nfc;
         Server udp_client;
         Position currentPosition;
         Position targetPosition;
@@ -30,8 +31,11 @@ namespace RobControl
         private void btn_connect_Click(object sender, EventArgs e)
         {
             //robotinho.Connect();
-            mqtt_client = new Mqtt("172.17.241.103");
-            string mqtt_status = mqtt_client.Connect();
+            mqtt_position = new Mqtt("172.17.241.103", "position_data");
+            string mqtt_status = mqtt_position.Connect();
+
+            mqtt_position = new Mqtt("172.17.241.103", "tag_nfc");
+            string mqtt_status2 = mqtt_position.Connect();
 
             udp_client = new Server("127.0.0.1", 9180);
             string udp_status = udp_client.Connect();
@@ -40,15 +44,9 @@ namespace RobControl
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            currentPosition = mqtt_client.CurrentPosition;
+            currentPosition = mqtt_position.CurrentPosition;
             startPosition = new Position(1,5);
-            List<Node> path = AStar.FindPath(startPosition, new Position(20, 34));
-
-            for (int i = 0; i < path.Count; i++)
-            {
-                System.Diagnostics.Debug.WriteLine(path[i].WorldPosition.X);
-                System.Diagnostics.Debug.WriteLine(path[i].WorldPosition.Y);
-            }
+            AStar.FindPath(startPosition, new Position(3, 7));
         }
     }
 }

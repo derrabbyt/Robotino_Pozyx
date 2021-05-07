@@ -22,8 +22,8 @@ namespace tryudp
             List<Node> Collums = new List<Node>();
 
             Node n = new Node(new System.Numerics.Vector2(1, 2), false, 1);
-            nL[0] = n;
-            Grid[0] = nL;
+            //nL[0] = n;
+            //Grid[0] = nL;
             return Grid;
         }
     }
