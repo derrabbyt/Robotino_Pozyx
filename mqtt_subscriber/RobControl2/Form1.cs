@@ -33,20 +33,24 @@ namespace RobControl
             //robotinho.Connect();
             mqtt_position = new Mqtt("172.17.241.103", "position_data");
             string mqtt_status = mqtt_position.Connect();
+            System.Diagnostics.Debug.WriteLine("pozyx: " + mqtt_status);
 
             mqtt_position = new Mqtt("172.17.241.103", "tag_nfc");
             string mqtt_status2 = mqtt_position.Connect();
+            System.Diagnostics.Debug.WriteLine("nfc: " + mqtt_status2);
 
             udp_client = new Server("127.0.0.1", 9180);
             string udp_status = udp_client.Connect();
+            System.Diagnostics.Debug.WriteLine("udp: " + udp_status);
 
         }
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            currentPosition = mqtt_position.CurrentPosition;
-            startPosition = new Position(1,5);
-            AStar.FindPath(startPosition, new Position(3, 7));
+            //currentPosition = mqtt_position.CurrentPosition;
+            System.Diagnostics.Debug.WriteLine("start pressed");
+            startPosition = new Position(16,1);
+            AStar.FindPath(startPosition, new Position(31, 25));
         }
     }
 }

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "roPIhWqWjLe4n2iYjNDO4Y2OZnszFthCyOqiGOtUiUiICqmduWwC474KWDKizS+5WPf0lj8B58j8SCudV7u4Jw==",
+  "dgSpecHash": "/nzKbF8do6l7p2qd3m7HWMe61iMytocjhNIccocLiHyaWswqMei2oewUYOw/ivuWeyTx6mcXE7cpoU+tIFVzIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\ConsoleApp1\\ConsoleApp1.csproj",
+  "projectFilePath": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\manue\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\manue\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\manue\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512"
+    "C:\\Users\\Florian\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Florian\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Florian\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512",
+    "C:\\Users\\Florian\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
   ],
   "logs": []
 }

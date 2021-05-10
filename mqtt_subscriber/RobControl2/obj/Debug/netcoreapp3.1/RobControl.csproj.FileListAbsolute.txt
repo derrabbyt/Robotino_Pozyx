@@ -35,3 +35,4 @@ C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.dll
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.pdb
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.genruntimeconfig.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.Properties.Resources.resources

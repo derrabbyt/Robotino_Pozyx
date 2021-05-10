@@ -8,7 +8,9 @@ namespace RobControl
     class Node
     {
         public bool Walkable { get; set; }
-        public Position WorldPosition { get; set; }
+
+        public int X { get; set; }
+        public int Y { get; set; }
 
         public int gCost;
         public int hCost;
@@ -23,10 +25,12 @@ namespace RobControl
             }
         }
 
-        public Node(bool walkable, Position position)
+        public Node(bool walkable, int x, int y)
         {
             Walkable = walkable;
-            WorldPosition = position;
+            X = x;
+            Y = y;
+
         }
 
     }

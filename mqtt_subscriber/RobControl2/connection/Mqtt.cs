@@ -12,8 +12,11 @@ namespace RobControl
     class Mqtt
     {
         private static MqttClient Client;
+
+        public bool Connected { get; set; }
         public Position CurrentPosition { get; set; }
-        public string tag;
+
+        string tag;
         public Mqtt(string address, string _tag)
         {
             Client = new MqttClient(address);
@@ -26,7 +29,6 @@ namespace RobControl
            // new MqttClient("localhost");//
 
             byte code = Client.Connect(Guid.NewGuid().ToString());
-          
 
             Client.MqttMsgPublishReceived += Client_MqttMsgPublishReceived;
 
@@ -35,10 +37,12 @@ namespace RobControl
             if (code == 0x00)
             {
                status = ("Mqtt Client connected to Server node!");
+               Connected = true;
             }
             else
             {
                 status = ("Mqtt Connection Refused");
+                Connected = false;
             }
             try
             {
@@ -65,17 +69,6 @@ namespace RobControl
             int x = Convert.ToInt32(coords[0]);
             int y = Convert.ToInt32(coords[1]);
             CurrentPosition = new Position(x, y);
-
-
-            //int[] bytesAsInts = Array.ConvertAll(e.Message, c => (int)c);
-            //System.Diagnostics.Debug.WriteLine(bytesAsInts[0]);
-            //System.Diagnostics.Debug.WriteLine(bytesAsInts[1]);
-
-            //CurrentPosition = new Position(bytesAsInts[0], bytesAsInts[1]);
-
         }
-
-
-
     }
 }

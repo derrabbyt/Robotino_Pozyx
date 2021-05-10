@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1JHTFW/rDjhzLLzqlfT7TYxVgx+OZPKskTXe2rl7MOBexXb8QX6Ji0qRR4NzZyQ6E/UN1ieAsCIaEGYHMGwncQ==",
+  "dgSpecHash": "HnJ7MCZPHFMdKG/5PlBHTFotJylfhLpScYzPhXR1irptQBS1ne1NKl/dpDQnEtibFq9O3feCJHWQzQAfdE4teg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\Algo\\Algo.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\Algo\\Algo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Florian\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
   "logs": []
 }

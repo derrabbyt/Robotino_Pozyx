@@ -40,7 +40,7 @@ namespace RobControl
         private static void Send(IPEndPoint ipe, Socket s, int xSoll, int ySoll, int phiSoll, int xIst, int
             yIst, int phiIst, int restart, int input7)
         {
-            byte[] message = getMessageToSend(0, xSoll, ySoll, phiSoll, xIst, ySoll, phiIst, restart, input7);
+            byte[] message = getMessageToSend(0, xSoll, ySoll, phiSoll, xIst, yIst, phiIst, restart, input7);
             s.SendTo(message, 0, message.Length, SocketFlags.None, ipe);
         }
 
