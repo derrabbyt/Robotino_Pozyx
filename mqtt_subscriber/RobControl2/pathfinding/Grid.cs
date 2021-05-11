@@ -47,22 +47,6 @@ namespace RobControl
                 System.Diagnostics.Debug.WriteLine("");
             }
             System.Diagnostics.Debug.WriteLine("");
-
-            //for (int i = 0; i < grid.GetLength(0); i++)
-            //{
-            //    for (int j = 0; j < grid.GetLength(1); j++)
-            //    {
-            //        if(grid[i,j].Walkable == true)
-            //        {
-            //            System.Diagnostics.Debug.Write(" ");
-            //        }
-            //        if(grid[i, j].Walkable == false)
-            //        {
-            //            System.Diagnostics.Debug.Write("x");
-            //        }
-            //    }
-            //    System.Diagnostics.Debug.WriteLine("");
-            //}
             System.Diagnostics.Debug.WriteLine("grid created");
             return grid;
         }
@@ -114,11 +98,11 @@ namespace RobControl
             return neighbours;
         }  //other old code
 
-        public static List<Node> GetNeighbours(Node node) //only direct adjenting neighbours
+        public static List<Node> GetNeighbours(Node node) //only directly adjenting neighbours
         {
             List<Node> neighbours = new List<Node>();
 
-            if (node.X - 1 >= 0 && node.X + 1 < img.Height && node.Y - 1 >= 0 && node.Y + 1 < img.Width)
+            if (node.X - 1 >= 0 && node.X + 1 < img.Width && node.Y - 1 >= 0 && node.Y + 1 < img.Height)
             {
                 neighbours.Add(grid[node.X + 1, node.Y]);
                 neighbours.Add(grid[node.X, node.Y + 1]);

@@ -84,6 +84,11 @@ namespace RobControl
 
         static int GetDistance(Node nodeA, Node nodeB)
         {
+
+            //if(grid[nodeB.X, nodeB.Y].Walkable == false)
+            //{
+            //    return 2000;
+            //}
             int dstX = Math.Abs(nodeA.X - nodeB.X);
             int dstY = Math.Abs(nodeA.Y - nodeB.Y);
 
