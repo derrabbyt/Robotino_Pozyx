@@ -15,6 +15,10 @@ namespace RobControl
         public int gCost;
         public int hCost;
 
+        public bool IsPath { get; set; }
+
+        public bool IsTurningPoint { get; set; }
+
         public Node parent;
 
         public int fCost

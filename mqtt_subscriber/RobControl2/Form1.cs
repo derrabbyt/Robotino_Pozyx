@@ -48,9 +48,12 @@ namespace RobControl
         private void btn_start_Click(object sender, EventArgs e)
         {
             //currentPosition = mqtt_position.CurrentPosition;
-            System.Diagnostics.Debug.WriteLine("start pressed");
             startPosition = new Position(16,1);
             AStar.FindPath(startPosition, new Position(31, 25));
+            //for (int i = 0; i < AStar.TurningPoints.Count; i++)
+            //{
+            //    System.Diagnostics.Debug.WriteLine("x: " + turningPositions[i].X + " y:" + turningPositions[i].Y);
+            //}
         }
     }
 }

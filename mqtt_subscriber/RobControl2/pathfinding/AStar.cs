@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RobControl
@@ -7,10 +8,9 @@ namespace RobControl
     class AStar
     {
         static Node[,] grid;
-        static List<Node> _path;
+        public static List<Position> TurningPoints = new List<Position>();
         public static void FindPath(Position startPos, Position targetPos)
         {
-            System.Diagnostics.Debug.WriteLine("path find enter");
 
             grid  = Grid.CreateGrid(startPos,targetPos);
 
@@ -29,7 +29,6 @@ namespace RobControl
                 {
                     if (openSet[i].fCost < node.fCost || openSet[i].fCost == node.fCost)
                     {
-                        System.Diagnostics.Debug.WriteLine("checks costs");
                         if (openSet[i].hCost < node.hCost)
                             node = openSet[i];
                     }
@@ -40,14 +39,13 @@ namespace RobControl
 
                 if (node == targetNode)
                 {
-                    System.Diagnostics.Debug.WriteLine("should enter retrace path");
                     RetracePath(startNode, targetNode);
                     return;
                 }
 
                 foreach (Node neighbour in Grid.GetNeighbours(node))
                 {
-                    System.Diagnostics.Debug.WriteLine("try checking neighbours");
+
                     if (!neighbour.Walkable || closedSet.Contains(neighbour))
                     {
                         continue;
@@ -62,16 +60,15 @@ namespace RobControl
 
                         if (!openSet.Contains(neighbour))
                             openSet.Add(neighbour);
-                        System.Diagnostics.Debug.WriteLine("open neighbours");
+
                     }
                 }
             }
-
         }
 
         static void RetracePath(Node startNode, Node endNode)
         {
-            System.Diagnostics.Debug.WriteLine("entered retrace path");
+
             List<Node> path = new List<Node>();
             Node currentNode = endNode;
 
@@ -82,13 +79,11 @@ namespace RobControl
             }
 
             path.Reverse();
-            _path = path;
             CalculateTurningPoints(path);
         }
 
         static int GetDistance(Node nodeA, Node nodeB)
         {
-            System.Diagnostics.Debug.WriteLine("enter getdistance");
             int dstX = Math.Abs(nodeA.X - nodeB.X);
             int dstY = Math.Abs(nodeA.Y - nodeB.Y);
 
@@ -97,14 +92,59 @@ namespace RobControl
             return 14 * dstX + 10 * (dstY - dstX);
         }
 
-        static void CalculateTurningPoints(List<Node> path)
+        static void CalculateTurningPoints(List<Node> path) 
         {
-            for (int i = 0; i < path.Count; i++)
+            int count = 0;
+            int direction = -1;
+            int currentDirection;
+
+            for (int i = 1; i < path.Count - 1; i++) //i hob keine ahnung wos genau der code mocht oba danke stackoverflow
             {
-                System.Diagnostics.Debug.WriteLine("x: " + path[i].X + " y: " + path[i].Y + " walkable: " + path[i].Walkable +  " cost: " + path[i].hCost);
-            
-            
+                if(path[i].X - path[i-1].X != 0)
+                    currentDirection = 0;
+                else
+                    currentDirection = 1;
+
+                if(direction != -1)
+                {
+                    if(currentDirection != direction)
+                    {
+                        count++;
+                        path[i-1].IsTurningPoint = true;
+                        TurningPoints.Add(new Position(path[i-1].X, path[i-1].Y));
+                        System.Diagnostics.Debug.WriteLine("changed direction at: x:" + path[i].X + " y: " + path[i].Y );
+                    }
+                }
+                direction = currentDirection;
             }
+
+
+            for (int i = 0; i < grid.GetLength(0); i++)
+            {
+                for (int j = 0; j < grid.GetLength(1); j++)
+                {
+                    if (grid[i, j].IsTurningPoint == true)
+                    {
+                        System.Diagnostics.Debug.Write("Ä");
+                    }
+                    else if (grid[i, j].IsPath == true)
+                    {
+                        System.Diagnostics.Debug.Write("Ü");
+                    }
+                    else if (grid[i, j].Walkable == true)
+                    {
+                        System.Diagnostics.Debug.Write(" ");
+                    }
+                    else if (grid[i, j].Walkable == false)
+                    {
+                        System.Diagnostics.Debug.Write("x");
+                    }
+
+                }
+                System.Diagnostics.Debug.WriteLine("");
+            }
+            System.Diagnostics.Debug.WriteLine("");
+
         }
     }
 }

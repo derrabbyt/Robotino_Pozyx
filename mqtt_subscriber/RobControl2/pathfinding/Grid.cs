@@ -17,7 +17,7 @@ namespace RobControl
         {
             img = new Bitmap(@"C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\111links.bmp");
             grid = new Node[img.Width, img.Height];
-            System.Diagnostics.Debug.WriteLine("gridSizeXY: " + img.Width +  "x" + img.Height);
+            System.Diagnostics.Debug.WriteLine("gridSizeXY: " + img.Width + "x" + img.Height);
 
             for (int i = 0; i < img.Width; i++)
             {
@@ -28,13 +28,13 @@ namespace RobControl
                     {
                         grid[i, j] = new Node(true, i, j);
                         System.Diagnostics.Debug.Write(" ");        //no obstacle
-                    }   
+                    }
                     else
                     {
                         grid[i, j] = new Node(false, i, j);
                         System.Diagnostics.Debug.Write("x");        //obstacle
-                    }   
-                    if(i== targetPos.Y && j == targetPos.X)
+                    }
+                    if (i == targetPos.Y && j == targetPos.X)
                     {
                         System.Diagnostics.Debug.Write("t");
                     }
@@ -89,7 +89,7 @@ namespace RobControl
             System.Diagnostics.Debug.WriteLine("finish adding neighbour");
             return neighbours;
         } //old code unused
-        public static List<Node> GetNeighbours(Node node)
+        public static List<Node> GetNeighbours3(Node node)
         {
             System.Diagnostics.Debug.WriteLine("entering getNeighbours");
             List<Node> neighbours = new List<Node>();
@@ -111,6 +111,21 @@ namespace RobControl
                 }
             }
             System.Diagnostics.Debug.WriteLine("finish adding neighbour");
+            return neighbours;
+        }  //other old code
+
+        public static List<Node> GetNeighbours(Node node) //only direct adjenting neighbours
+        {
+            List<Node> neighbours = new List<Node>();
+
+            if (node.X - 1 >= 0 && node.X + 1 < img.Height && node.Y - 1 >= 0 && node.Y + 1 < img.Width)
+            {
+                neighbours.Add(grid[node.X + 1, node.Y]);
+                neighbours.Add(grid[node.X, node.Y + 1]);
+                neighbours.Add(grid[node.X - 1, node.Y]);
+                neighbours.Add(grid[node.X, node.Y - 1]);
+            }
+
             return neighbours;
         }
     }
