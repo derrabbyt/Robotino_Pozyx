@@ -15,9 +15,9 @@ namespace RobControl
         static Node[,] grid;
         public static Node[,] CreateGrid(Position startPos, Position targetPos) //pfusch it in
         {
-            img = new Bitmap(@"C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\111links.bmp");
+            img = new Bitmap(@"C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\111links2.bmp");
             grid = new Node[img.Width, img.Height];
-            System.Diagnostics.Debug.WriteLine("gridSizeXY: " + img.Width + "x" + img.Height);
+            System.Diagnostics.Debug.WriteLine("gridSizeXY: " + img.Width + "x"+ img.Height);
 
             for (int i = 0; i < img.Width; i++)
             {
@@ -29,9 +29,10 @@ namespace RobControl
                         grid[i, j] = new Node(true, i, j);
                         System.Diagnostics.Debug.Write(" ");        //no obstacle
                     }
-                    else
+                    else 
                     {
                         grid[i, j] = new Node(false, i, j);
+                        //CloseAdj(grid[i, j]);
                         System.Diagnostics.Debug.Write("x");        //obstacle
                     }
                     if (i == targetPos.Y && j == targetPos.X)
@@ -49,6 +50,20 @@ namespace RobControl
             System.Diagnostics.Debug.WriteLine("");
             System.Diagnostics.Debug.WriteLine("grid created");
             return grid;
+        }
+
+        private static void CloseAdj(Node node)
+        {
+            for (int i =  node.X- 1; i <=  node.X+1; i++)    //checks the surrounding fields (max 8)
+            {
+                for (int j = node.Y- 1; j <= node.Y+ 1; j++)
+                {
+                    if (node.X - 1 > 0 && node.X + 1 < img.Width && node.Y - 1 > 0 && node.Y + 1 < img.Height)
+                    {
+                        grid[i, j] = new Node(false, i, j);
+                    }
+                }
+            }
         }
 
         public static List<Node> GetNeighbours2(Node node)

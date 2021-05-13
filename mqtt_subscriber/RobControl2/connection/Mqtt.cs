@@ -69,6 +69,7 @@ namespace RobControl
             int x = Convert.ToInt32(coords[0]);
             int y = Convert.ToInt32(coords[1]);
             CurrentPosition = new Position(x, y);
+            Logic.PositionFromPozyxUpdate(CurrentPosition);
         }
     }
 }

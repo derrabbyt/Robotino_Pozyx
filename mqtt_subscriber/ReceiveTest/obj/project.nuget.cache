@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PxDWlkCchM5M8vRvC6acI0zEtUGonisvd6F8RVwlSqo8SoEyShEDWQzr/UJCoO3sbvxFrYuIymzOBYgG4Up0AA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\ReceiveTest\\ReceiveTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Florian\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}

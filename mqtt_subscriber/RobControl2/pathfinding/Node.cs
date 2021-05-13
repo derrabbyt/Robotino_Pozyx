@@ -9,6 +9,8 @@ namespace RobControl
     {
         public bool Walkable { get; set; }
 
+        public bool AdjNonWalkable { get; set; }
+
         public int X { get; set; }
         public int Y { get; set; }
 

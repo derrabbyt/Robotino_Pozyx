@@ -1,0 +1,13 @@
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\bin\Debug\netcoreapp3.1\ReceiveTest.exe
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\bin\Debug\netcoreapp3.1\ReceiveTest.deps.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\bin\Debug\netcoreapp3.1\ReceiveTest.runtimeconfig.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\bin\Debug\netcoreapp3.1\ReceiveTest.runtimeconfig.dev.json
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\bin\Debug\netcoreapp3.1\ReceiveTest.dll
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\bin\Debug\netcoreapp3.1\ReceiveTest.pdb
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\obj\Debug\netcoreapp3.1\ReceiveTest.csprojAssemblyReference.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\obj\Debug\netcoreapp3.1\ReceiveTest.AssemblyInfoInputs.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\obj\Debug\netcoreapp3.1\ReceiveTest.AssemblyInfo.cs
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\obj\Debug\netcoreapp3.1\ReceiveTest.csproj.CoreCompileInputs.cache
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\obj\Debug\netcoreapp3.1\ReceiveTest.dll
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\obj\Debug\netcoreapp3.1\ReceiveTest.pdb
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\ReceiveTest\obj\Debug\netcoreapp3.1\ReceiveTest.genruntimeconfig.cache

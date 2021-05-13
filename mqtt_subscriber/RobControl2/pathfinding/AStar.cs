@@ -140,7 +140,7 @@ namespace RobControl
                     {
                         System.Diagnostics.Debug.Write(" ");
                     }
-                    else if (grid[i, j].Walkable == false)
+                    else if (grid[i, j].AdjNonWalkable == false)
                     {
                         System.Diagnostics.Debug.Write("x");
                     }
