@@ -9,10 +9,11 @@ namespace RobControl
     {
         static Node[,] grid;
         public static List<Position> TurningPoints = new List<Position>();
-        public static void FindPath(Position startPos, Position targetPos)
+        public static bool tpCalculated = false;
+        public static List<Position> FindPath(Position startPos, Position targetPos)
         {
 
-            grid  = Grid.CreateGrid(startPos,targetPos);
+            grid = Grid.CreateGrid(startPos, targetPos);
 
             Node startNode = grid[startPos.Y, startPos.X];
             Node targetNode = grid[targetPos.Y, targetPos.X];
@@ -40,7 +41,6 @@ namespace RobControl
                 if (node == targetNode)
                 {
                     RetracePath(startNode, targetNode);
-                    return;
                 }
 
                 foreach (Node neighbour in Grid.GetNeighbours(node))
@@ -60,10 +60,10 @@ namespace RobControl
 
                         if (!openSet.Contains(neighbour))
                             openSet.Add(neighbour);
-
                     }
-                }
+                }  
             }
+            return TurningPoints;
         }
 
         static void RetracePath(Node startNode, Node endNode)
@@ -72,7 +72,7 @@ namespace RobControl
             List<Node> path = new List<Node>();
             Node currentNode = endNode;
 
-            while(currentNode != startNode)
+            while (currentNode != startNode)
             {
                 path.Add(currentNode);
                 currentNode = currentNode.parent;
@@ -84,11 +84,6 @@ namespace RobControl
 
         static int GetDistance(Node nodeA, Node nodeB)
         {
-
-            //if(grid[nodeB.X, nodeB.Y].Walkable == false)
-            //{
-            //    return 2000;
-            //}
             int dstX = Math.Abs(nodeA.X - nodeB.X);
             int dstY = Math.Abs(nodeA.Y - nodeB.Y);
 
@@ -97,7 +92,7 @@ namespace RobControl
             return 14 * dstX + 10 * (dstY - dstX);
         }
 
-        static void CalculateTurningPoints(List<Node> path) 
+        static void CalculateTurningPoints(List<Node> path)
         {
             int count = 0;
             int direction = -1;
@@ -105,24 +100,23 @@ namespace RobControl
 
             for (int i = 1; i < path.Count - 1; i++) //i hob keine ahnung wos genau der code mocht oba danke stackoverflow
             {
-                if(path[i].X - path[i-1].X != 0)
+                if (path[i].X - path[i - 1].X != 0)
                     currentDirection = 0;
                 else
                     currentDirection = 1;
 
-                if(direction != -1)
+                if (direction != -1)
                 {
-                    if(currentDirection != direction)
+                    if (currentDirection != direction)
                     {
                         count++;
-                        path[i-1].IsTurningPoint = true;
-                        TurningPoints.Add(new Position(path[i-1].X, path[i-1].Y));
-                        System.Diagnostics.Debug.WriteLine("changed direction at: x:" + path[i].X + " y: " + path[i].Y );
+                        path[i - 1].IsTurningPoint = true;
+                        TurningPoints.Add(new Position(path[i - 1].X, path[i - 1].Y, direction));
+                        System.Diagnostics.Debug.WriteLine("changed direction at: x:" + path[i - 1].X + " y: " + path[i - 1].Y + "direct: " + direction);
                     }
                 }
                 direction = currentDirection;
             }
-
 
             for (int i = 0; i < grid.GetLength(0); i++)
             {
@@ -149,7 +143,12 @@ namespace RobControl
                 System.Diagnostics.Debug.WriteLine("");
             }
             System.Diagnostics.Debug.WriteLine("");
+            tpCalculated = true;
+        }
 
+        public static List<Position> GetTurningPoints()
+        {
+            return TurningPoints;
         }
     }
 }

@@ -20,14 +20,18 @@ namespace RobControl
         private State state = new State();
         private AsyncCallback recv = null;
         IPEndPoint ipe_emission;
+        public Logic RobLogic;
         EndPoint ipe_reception;
 
 
-        public Server(string address, int port_emission, int port_reception)
+        public Server(string address, int port_emission, int port_reception, Logic rL)
         {
             udp_port_emission = port_emission;
             udp_port_reception = port_reception;
             udp_ip = IPAddress.Parse(address);
+            RobLogic = rL;
+
+
 
         }
         public class State
@@ -58,11 +62,11 @@ namespace RobControl
             sSend.Close();
         }
 
-        private static void Send(IPEndPoint ipe, Socket s, int xSoll, int ySoll, int phiSoll, int xIst, int
+        public void Send(int xSoll, int ySoll, int phiSoll, int xIst, int
             yIst, int phiIst, int restart, int input7)
         {
             byte[] message = getMessageToSend(0, xSoll, ySoll, phiSoll, xIst, yIst, phiIst, restart, input7);
-            s.SendTo(message, 0, message.Length, SocketFlags.None, ipe);
+            sSend.SendTo(message, 0, message.Length, SocketFlags.None, ipe_emission);
         }
 
         private static byte[] getMessageToSend(int ID_Message, int input0, int input1, int input2, int input3, int
@@ -168,7 +172,7 @@ namespace RobControl
                 intToReturn = Convert.ToInt32(Bytes[0]) + (256 * Convert.ToInt32(Bytes[1])) + (256 * 256 * Convert.ToInt32(Bytes[2]) + (256 * 256 * 256 * Convert.ToInt32(Bytes[3])));
             }
 
-            Logic.UpdateMessageFromRobotino(intToReturn);
+            RobLogic.MessageFromRobotino1(intToReturn);
         }
     }
 }

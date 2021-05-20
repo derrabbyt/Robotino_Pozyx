@@ -17,11 +17,15 @@ namespace RobControl
         public Position CurrentPosition { get; set; }
 
         string tag;
-        public Mqtt(string address, string _tag)
+        public Logic RobLogic;
+        public Mqtt(string address, string _tag, Logic rL)
         {
             Client = new MqttClient(address);
             tag = _tag;
+            RobLogic = rL;
         }
+
+
        
         public string Connect()
         {
@@ -69,7 +73,7 @@ namespace RobControl
             int x = Convert.ToInt32(coords[0]);
             int y = Convert.ToInt32(coords[1]);
             CurrentPosition = new Position(x, y);
-            Logic.PositionFromPozyxUpdate(CurrentPosition);
+            RobLogic.MessageFromMqtt(System.Text.Encoding.Default.GetString(e.Message), e.Topic);
         }
     }
 }

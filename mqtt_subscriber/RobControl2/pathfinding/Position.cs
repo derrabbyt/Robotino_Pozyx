@@ -13,8 +13,17 @@ namespace RobControl
             X = x;
             Y = y;
         }
+
+        public Position(int x, int y, int d)
+        {
+            X = x;
+            Y = y;
+            Direction = d;
+        }
         public int X { get; set; }
 
         public int Y { get; set; }
+
+        public int Direction { get; set; }
     }
 }

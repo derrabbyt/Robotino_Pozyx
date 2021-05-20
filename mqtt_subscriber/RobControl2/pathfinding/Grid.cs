@@ -9,7 +9,7 @@ namespace RobControl
 {
     class Grid
     {
-        //pic of roomlayout in 1:500 
+        //pic of roomlayout in 1:500 oda so
         static Color pixel;    //obstacles are black in the pic
         static Bitmap img;
         static Node[,] grid;

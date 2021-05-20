@@ -3,7 +3,6 @@ C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcorea
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.AssemblyInfoInputs.cache
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.AssemblyInfo.cs
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.csproj.CoreCompileInputs.cache
-C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.Form1.resources
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\bin\Debug\netcoreapp3.1\RobControl.exe
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\bin\Debug\netcoreapp3.1\RobControl.deps.json
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\bin\Debug\netcoreapp3.1\RobControl.runtimeconfig.json
@@ -36,3 +35,4 @@ C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.pdb
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.genruntimeconfig.cache
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.Properties.Resources.resources
+C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.UI.resources
