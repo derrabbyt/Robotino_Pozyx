@@ -24,7 +24,6 @@ C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\bin\Debug\netcoreapp3.1\M2MqttClientDotnetCore1.0.1.dll
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\bin\Debug\netcoreapp3.1\M2Mqtt.dll
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.csprojAssemblyReference.cache
-C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.Form1.resources
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.Properties.Resources.resources
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.csproj.GenerateResource.cache
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.AssemblyInfoInputs.cache
@@ -36,3 +35,4 @@ C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino
 C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.genruntimeconfig.cache
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.Properties.Resources.resources
 C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.UI.resources
+C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\RobControl2\obj\Debug\netcoreapp3.1\RobControl.UI.resources
