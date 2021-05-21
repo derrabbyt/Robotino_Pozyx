@@ -22,6 +22,8 @@ namespace RobControl
         public double currentDirection;
         public double TargetDirection;
 
+        AStar Algo = new AStar();
+
 
         int count = 0;
 
@@ -48,7 +50,8 @@ namespace RobControl
         {
             startPosition = new Position(31, 3);
             targetPosition = new Position(14, 22);
-            TurningPoints = AStar.FindPath(startPosition, targetPosition);
+            TurningPoints = Algo.FindPath(startPosition, targetPosition);
+            currentTurningPoint = TurningPoints[0];
         }
 
         public void Stop()
@@ -61,9 +64,17 @@ namespace RobControl
             System.Diagnostics.Debug.WriteLine("message from robotinho: " + msg);
             if (msg == 1)
             {
-                turningPointIndex++;
-                currentTurningPoint = TurningPoints[turningPointIndex];
-                SendTargetCoordinate();
+
+                if (TurningPoints != null && currentPosition != null)
+                {
+                    if (turningPointIndex < TurningPoints.Count - 1)
+                    {
+                        turningPointIndex++;
+                        currentTurningPoint = TurningPoints[turningPointIndex];
+                        SendTargetCoordinate();
+                    }
+
+                }
             }
         }
 
@@ -78,16 +89,19 @@ namespace RobControl
                 int x = Convert.ToInt32(coords[0]);
                 int y = Convert.ToInt32(coords[1]);
                 count++;
-                System.Diagnostics.Debug.WriteLine(str);
-                if (x != 0 && y != 0 && count < 10)  // every 10th position gets sent to the robotino
+               
+
+                if(x!= 0 && y!= 0)
                 {
-                    currentPosition = new Position(x / 500, y / 500);
-                    count = 0;
-                    if (drivable == true)
-                    {
-                        SendTargetCoordinate();
-                    }
+                    currentPosition = new Position(x, y);
+                    System.Diagnostics.Debug.WriteLine(currentPosition.X + " " + currentPosition.Y);
                 }
+
+                if (currentTurningPoint != null && currentPosition != null)
+                {
+                    SendTargetCoordinate();
+                }
+
 
             }
             else if (topic == "tag_nfc")
@@ -96,7 +110,7 @@ namespace RobControl
             }
         }
 
-        public void SendTargetCoordinate() => udp_client.Send(currentTurningPoint.X, currentTurningPoint.Y, 0, currentPosition.X, currentPosition.Y, 0, 0, 123);
+        public void SendTargetCoordinate() => udp_client.Send(currentTurningPoint.X*200, currentTurningPoint.Y*200, 0, currentPosition.X, currentPosition.Y, 0, 0, 123);
         public Position GetCurrentPosition() => currentPosition;
     }
 }

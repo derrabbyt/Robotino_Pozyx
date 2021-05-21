@@ -33,21 +33,16 @@ namespace RobControl
                     {
                         grid[i, j] = new Node(false, i, j);
                         //CloseAdj(grid[i, j]);
-                        System.Diagnostics.Debug.Write("x");        //obstacle
                     }
                     if (i == targetPos.Y && j == targetPos.X)
                     {
-                        System.Diagnostics.Debug.Write("t");
                     }
                     if (i == startPos.Y && j == startPos.X)
                     {
-                        System.Diagnostics.Debug.Write("o");
                     }
                     //width = y = i and height = x = j
                 }
-                System.Diagnostics.Debug.WriteLine("");
             }
-            System.Diagnostics.Debug.WriteLine("");
             System.Diagnostics.Debug.WriteLine("grid created");
             return grid;
         }
@@ -68,7 +63,6 @@ namespace RobControl
 
         public static List<Node> GetNeighbours2(Node node)
         {
-            System.Diagnostics.Debug.WriteLine("get neighbours enter");
             List<Node> neighbours = new List<Node>();
             int x = node.X;
             int y = node.Y;
@@ -80,17 +74,14 @@ namespace RobControl
                 {
                     if (i > -1 && i < img.Width && j > -1 && j < img.Height)  //checks OutOfRange Exception
                     {
-                        System.Diagnostics.Debug.WriteLine("add neighbour");
                         neighbours.Add(node);
                     }
                 }
             }
-            System.Diagnostics.Debug.WriteLine("finish adding neighbour");
             return neighbours;
         } //old code unused
         public static List<Node> GetNeighbours3(Node node)
         {
-            System.Diagnostics.Debug.WriteLine("entering getNeighbours");
             List<Node> neighbours = new List<Node>();
 
             for (int x = -1; x <= 1; x++)
@@ -109,7 +100,6 @@ namespace RobControl
                     }
                 }
             }
-            System.Diagnostics.Debug.WriteLine("finish adding neighbour");
             return neighbours;
         }  //other old code
 

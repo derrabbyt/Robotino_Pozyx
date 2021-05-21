@@ -8,9 +8,9 @@ namespace RobControl
     class AStar
     {
         static Node[,] grid;
-        public static List<Position> TurningPoints = new List<Position>();
-        public static bool tpCalculated = false;
-        public static List<Position> FindPath(Position startPos, Position targetPos)
+        public List<Position> TurningPoints = new List<Position>();
+        public bool tpCalculated = false;
+        public List<Position> FindPath(Position startPos, Position targetPos)
         {
 
             grid = Grid.CreateGrid(startPos, targetPos);
@@ -66,7 +66,7 @@ namespace RobControl
             return TurningPoints;
         }
 
-        static void RetracePath(Node startNode, Node endNode)
+        void RetracePath(Node startNode, Node endNode)
         {
 
             List<Node> path = new List<Node>();
@@ -76,13 +76,13 @@ namespace RobControl
             {
                 path.Add(currentNode);
                 currentNode = currentNode.parent;
-            }
+            }   
 
             path.Reverse();
             CalculateTurningPoints(path);
         }
 
-        static int GetDistance(Node nodeA, Node nodeB)
+        int GetDistance(Node nodeA, Node nodeB)
         {
             int dstX = Math.Abs(nodeA.X - nodeB.X);
             int dstY = Math.Abs(nodeA.Y - nodeB.Y);
@@ -92,7 +92,7 @@ namespace RobControl
             return 14 * dstX + 10 * (dstY - dstX);
         }
 
-        static void CalculateTurningPoints(List<Node> path)
+        void CalculateTurningPoints(List<Node> path)
         {
             int count = 0;
             int direction = -1;
@@ -112,41 +112,14 @@ namespace RobControl
                         count++;
                         path[i - 1].IsTurningPoint = true;
                         TurningPoints.Add(new Position(path[i - 1].X, path[i - 1].Y, direction));
-                        System.Diagnostics.Debug.WriteLine("changed direction at: x:" + path[i - 1].X + " y: " + path[i - 1].Y + "direct: " + direction);
+                        //System.Diagnostics.Debug.WriteLine("changed direction at: x:" + path[i - 1].X + " y: " + path[i - 1].Y + "direct: " + direction);
                     }
                 }
                 direction = currentDirection;
             }
-
-            for (int i = 0; i < grid.GetLength(0); i++)
-            {
-                for (int j = 0; j < grid.GetLength(1); j++)
-                {
-                    if (grid[i, j].IsTurningPoint == true)
-                    {
-                        System.Diagnostics.Debug.Write("Ä");
-                    }
-                    else if (grid[i, j].IsPath == true)
-                    {
-                        System.Diagnostics.Debug.Write("Ü");
-                    }
-                    else if (grid[i, j].Walkable == true)
-                    {
-                        System.Diagnostics.Debug.Write(" ");
-                    }
-                    else if (grid[i, j].AdjNonWalkable == false)
-                    {
-                        System.Diagnostics.Debug.Write("x");
-                    }
-
-                }
-                System.Diagnostics.Debug.WriteLine("");
-            }
-            System.Diagnostics.Debug.WriteLine("");
-            tpCalculated = true;
         }
 
-        public static List<Position> GetTurningPoints()
+        public List<Position> GetTurningPoints()
         {
             return TurningPoints;
         }
