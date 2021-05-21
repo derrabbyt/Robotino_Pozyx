@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "llAXBFV9MrzQg9UbSVB4guKljn48mTqTaUyjeYI7IW2+tssFPZR21aDWVYsrNjjRbv701P/oTVOp5ItNenIQpw==",
+  "dgSpecHash": "0sbRy32Qi1xgI1j0GLPdX0Z2PXaeCN/oY+B2w6XMK8TsFnH3UR4y0pAMzsHRq3MbZPiNkv6UwFMzmflJnS/RHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\EventTest\\EventTest.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Florian\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\EventTest\\EventTest.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
