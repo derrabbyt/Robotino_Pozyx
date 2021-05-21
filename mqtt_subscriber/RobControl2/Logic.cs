@@ -94,7 +94,8 @@ namespace RobControl
                 if(x!= 0 && y!= 0)
                 {
                     currentPosition = new Position(x, y);
-                    System.Diagnostics.Debug.WriteLine(currentPosition.X + " " + currentPosition.Y);
+                    System.Diagnostics.Debug.WriteLine(currentPosition.X/200 + " " + currentPosition.Y/200);
+                    
                 }
 
                 if (currentTurningPoint != null && currentPosition != null)
@@ -111,6 +112,9 @@ namespace RobControl
         }
 
         public void SendTargetCoordinate() => udp_client.Send(currentTurningPoint.X*200, currentTurningPoint.Y*200, 0, currentPosition.X, currentPosition.Y, 0, 0, 123);
-        public Position GetCurrentPosition() => currentPosition;
+        public Position GetCurrentPosition()
+        {
+            return currentPosition;
+        } 
     }
 }

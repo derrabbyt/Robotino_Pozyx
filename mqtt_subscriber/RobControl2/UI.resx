@@ -64,7 +64,7 @@
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="canvas.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAuoAAAPFCAMAAAAEND3DAAAABGdBTUEAALGPC/xhBQAAAwBQTFRFAAAA
         AQEBAgICAwMDBAQEBQUFBgYGBwcHCAgICQkJCgoK8/Pz9PT09fX19vb29/f3+Pj4+fn5+vr6+/v7/Pz8
@@ -80,7 +80,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfOV7+gAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAALAFJREFUeF7t3Y1WG7myQGGDTZjczCHgH3j/N72lcmFcaqWTaiuomtnfWgeEOQhZ
+        vQAADr0BR/uQrQAALAFJREFUeF7t3Y1WG7myQGGDTZjczCHgH3j/N72lcmFcaqWTaiuomtnfWgeEOQhZ
         2mQ6xoHN29vr62az2e3kxWZzf6+vbvHwoK++ffu22Wy3Ok5Kl6gvyqrPy8YMPc7zfr0f8wDbsozfH9vd
         nb6yoncSOKmT+p9aeerFXaGj3U4nWujjY3W6f/45v5GYbkS50/LKtgAz/iln+h7LuD/KtKyrVbSXYYuV
         yj/+BCd1Uv8zK0/94WG/37++vr2disPh8LbU6+vr8WhjUSa3YUqyXP0v4fNzuffy5vlm/IrmYuO3t+Px
