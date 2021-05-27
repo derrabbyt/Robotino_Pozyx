@@ -135,6 +135,7 @@ namespace RobControl
             // 
             // btn_start
             // 
+            this.btn_start.Enabled = false;
             this.btn_start.Location = new System.Drawing.Point(6, 234);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(333, 29);
@@ -194,7 +195,6 @@ namespace RobControl
             this.canvas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.canvas.TabIndex = 2;
             this.canvas.TabStop = false;
-            this.canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.canvas_Paint);
             // 
             // UI
             // 

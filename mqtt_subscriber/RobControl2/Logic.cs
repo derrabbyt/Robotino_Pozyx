@@ -10,39 +10,47 @@ namespace RobControl
         Mqtt mqtt_nfc;
         public Server udp_client;
 
-        public bool drivable;
-
         int turningPointIndex = 0;
         Position currentTurningPoint;
+        Position PositiontBeforeCurrentTurningPoint;
 
         Position targetPosition;
         Position startPosition;
         public Position currentPosition;
+        Position PositionBeforCurrentPositon;
 
         public double currentDirection;
         public double TargetDirection;
 
         AStar Algo = new AStar();
 
+       // List<int> lastMessages = new List<int>(5);
 
         int count = 0;
 
+        int getPosiCount = 0;
+
+        List<Position> Posis = new List<Position>();
+
 
         public List<Position> TurningPoints = new List<Position>();
-        public void Connect()
+        public (bool, bool, bool) Connect()
         {
 
             udp_client = new Server("127.0.0.1", 9180, 9182, this);
-            string udp_status = udp_client.Connect();
-            System.Diagnostics.Debug.WriteLine("udp: " + udp_status);
+            bool udp_status = udp_client.Connect();
+            System.Diagnostics.Debug.WriteLine("udp connected: " + udp_status);
 
             mqtt_position = new Mqtt("172.17.241.222", "position_data", this);
-            string mqtt_status = mqtt_position.Connect();
-            System.Diagnostics.Debug.WriteLine("pozyx: " + mqtt_status);
+            bool mqtt_status = mqtt_position.Connect();
+            System.Diagnostics.Debug.WriteLine("pozyx connected: " + mqtt_status);
 
             mqtt_nfc = new Mqtt("172.17.241.222", "tag_nfc", this);
-            string mqtt_status2 = mqtt_position.Connect();
-            System.Diagnostics.Debug.WriteLine("nfc: " + mqtt_status2);
+            bool mqtt_status2 = mqtt_position.Connect();
+            System.Diagnostics.Debug.WriteLine("nfc connected: " + mqtt_status2);
+
+            return (mqtt_status2, mqtt_status, udp_status);
+
 
         }
 
@@ -64,16 +72,20 @@ namespace RobControl
             System.Diagnostics.Debug.WriteLine("message from robotinho: " + msg);
             if (msg == 1)
             {
-
-                if (TurningPoints != null && currentPosition != null)
+                //lastMessages.Add(msg);
+                count++;
+                if(count >= 10)
                 {
-                    if (turningPointIndex < TurningPoints.Count - 1)
+                    if (TurningPoints != null && currentPosition != null)
                     {
-                        turningPointIndex++;
-                        currentTurningPoint = TurningPoints[turningPointIndex];
-                        SendTargetCoordinate();
+                        if (turningPointIndex < TurningPoints.Count - 1)
+                        {
+                            turningPointIndex++;
+                            currentTurningPoint = TurningPoints[turningPointIndex];
+                            SendTargetCoordinate();
+                        }
                     }
-
+                    count = 0;
                 }
             }
         }
@@ -88,13 +100,16 @@ namespace RobControl
                 string[] coords = str.Split(" ");
                 int x = Convert.ToInt32(coords[0]);
                 int y = Convert.ToInt32(coords[1]);
-                count++;
-               
 
-                if(x!= 0 && y!= 0)
+      
+
+                if (x != 0 && y != 0)
                 {
+                    System.Diagnostics.Debug.WriteLine(x + " " + y);
+
                     currentPosition = new Position(x, y);
-                    System.Diagnostics.Debug.WriteLine(currentPosition.X + " " + currentPosition.Y);
+
+
                 }
 
                 if (currentTurningPoint != null && currentPosition != null)
@@ -110,7 +125,7 @@ namespace RobControl
             }
         }
 
-        public void SendTargetCoordinate() => udp_client.Send(currentTurningPoint.X*200, currentTurningPoint.Y*200, 0, currentPosition.X, currentPosition.Y, 0, 0, 123);
+        public void SendTargetCoordinate() => udp_client.Send(currentTurningPoint.X * 200, currentTurningPoint.Y * 200, 1, currentPosition.X, currentPosition.Y, 0, 0, 123);
         public Position GetCurrentPosition() => currentPosition;
     }
 }

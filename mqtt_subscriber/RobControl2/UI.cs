@@ -12,9 +12,12 @@ namespace RobControl
 {
     public partial class UI : Form
     {
-         // call this if you want the current pos
+        // call this if you want the current pos
         Logic RobLogic = new Logic();
-        
+
+        bool mqtt_status2;
+        bool mqtt_status; 
+        bool udp_status;
 
         public UI()
         {
@@ -23,21 +26,17 @@ namespace RobControl
 
         private void btn_connect_Click(object sender, EventArgs e)
         {
-            RobLogic.Connect();
+            (mqtt_status2, mqtt_status, udp_status) = RobLogic.Connect();
+            if (mqtt_status2 && mqtt_status && udp_status)
+            {
+                btn_start.Enabled = true;
+            }
         }
 
         private void btn_start_Click(object sender, EventArgs e)
         {
             RobLogic.Start();
-            Position currentPosition = RobLogic.GetCurrentPosition();      // call this if you want the current pos
         }
-        private void canvas_Paint(object sender, PaintEventArgs e)
-        {
-            Graphics gObject = canvas.CreateGraphics();
-            Brush red = new SolidBrush(Color.Red);
-            Pen redPen = new Pen(red, 8);
 
-            gObject.DrawLine(redPen, 50, 50, 50, 50);
-        }
     }
 }
