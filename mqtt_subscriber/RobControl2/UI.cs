@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace RobControl
 {
-    public partial class UI : Form
+    public partial class UI : System.Windows.Forms.Form
     {
         // call this if you want the current pos
         Logic RobLogic = new Logic();

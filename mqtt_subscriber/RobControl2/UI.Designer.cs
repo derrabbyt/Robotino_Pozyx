@@ -44,10 +44,10 @@ namespace RobControl
             this.statusPanel = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.status = new System.Windows.Forms.ToolStripStatusLabel();
-            this.canvas = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.canvas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -186,7 +186,7 @@ namespace RobControl
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(0, 16);
             // 
-            // canvas
+            // pictureBox1
             // 
             this.canvas.Image = ((System.Drawing.Image)(resources.GetObject("canvas.Image")));
             this.canvas.Location = new System.Drawing.Point(12, 12);
@@ -201,17 +201,18 @@ namespace RobControl
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.canvas);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.statusPanel);
             this.Controls.Add(this.groupBox1);
             this.Name = "UI";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.UI_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.canvas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,7 +234,7 @@ namespace RobControl
         private System.Windows.Forms.Panel statusPanel;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel status;
-        private System.Windows.Forms.PictureBox canvas;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
