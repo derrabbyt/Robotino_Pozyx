@@ -25,5 +25,7 @@ namespace RobControl
         public int Y { get; set; }
 
         public int Direction { get; set; }
+
+        public double Angle { get; set; }
     }
 }

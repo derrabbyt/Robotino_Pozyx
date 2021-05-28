@@ -135,6 +135,7 @@ namespace RobControl
             // 
             // btn_start
             // 
+            this.btn_start.Enabled = false;
             this.btn_start.Location = new System.Drawing.Point(6, 234);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(333, 29);
@@ -187,14 +188,13 @@ namespace RobControl
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(412, 426);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            this.canvas.Image = ((System.Drawing.Image)(resources.GetObject("canvas.Image")));
+            this.canvas.Location = new System.Drawing.Point(12, 12);
+            this.canvas.Name = "canvas";
+            this.canvas.Size = new System.Drawing.Size(412, 426);
+            this.canvas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.canvas.TabIndex = 2;
+            this.canvas.TabStop = false;
             // 
             // UI
             // 

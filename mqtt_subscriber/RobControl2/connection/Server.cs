@@ -22,6 +22,7 @@ namespace RobControl
         IPEndPoint ipe_emission;
         public Logic RobLogic;
         EndPoint ipe_reception;
+        bool connected;
 
 
         public Server(string address, int port_emission, int port_reception, Logic rL)
@@ -39,7 +40,7 @@ namespace RobControl
             public byte[] buffer = new byte[bufSize];
         }
 
-        public string Connect()
+        public bool Connect()
         {
             ipe_emission = new IPEndPoint(udp_ip, udp_port_emission);
             ipe_reception = new IPEndPoint(udp_ip, udp_port_reception);
@@ -54,7 +55,15 @@ namespace RobControl
             sReceive.Bind(ipe_reception);
 
             Receive();
-            return "connecting to server via udp oba is nu ned do";
+            System.Diagnostics.Debug.WriteLine("ssend: " + sSend.Connected);
+            System.Diagnostics.Debug.WriteLine("sreceive: " + sReceive.Connected);
+            if (sSend.Connected== true){
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public void Stop()

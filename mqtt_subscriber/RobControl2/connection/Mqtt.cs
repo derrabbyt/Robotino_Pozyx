@@ -13,7 +13,7 @@ namespace RobControl
     {
         private static MqttClient Client;
 
-        public bool Connected { get; set; }
+        public bool connected;
         public Position CurrentPosition { get; set; }
 
         string tag;
@@ -27,7 +27,7 @@ namespace RobControl
 
 
        
-        public string Connect()
+        public bool Connect()
         {
             // Create client instance 
            // new MqttClient("localhost");//
@@ -41,12 +41,12 @@ namespace RobControl
             if (code == 0x00)
             {
                status = ("Mqtt Client connected to Server node!");
-               Connected = true;
+               connected = true;
             }
             else
             {
                 status = ("Mqtt Connection Refused");
-                Connected = false;
+                connected = false;
             }
             try
             {
@@ -58,7 +58,7 @@ namespace RobControl
                 throw new Exception(ex.Message);
             }
 
-            return status;
+            return connected;
 
         }
 

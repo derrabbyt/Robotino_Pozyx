@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kcc00UX5/Rto4xEiJC5d0cA7XMTuFFpBwpP+DhqCck19obyV5Yc+A9AIY8ehU92xrR09ohwlpfHLIpB9EGX5xw==",
+  "dgSpecHash": "PxDWlkCchM5M8vRvC6acI0zEtUGonisvd6F8RVwlSqo8SoEyShEDWQzr/UJCoO3sbvxFrYuIymzOBYgG4Up0AA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\manue\\OneDrive\\Dokumente\\Htl Neufelden\\4. Klasse\\Maturaprojekt\\Robotino_Pozyx\\mqtt_subscriber\\ReceiveTest\\ReceiveTest.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Florian\\Desktop\\Robotino\\mqtt_subscriber\\ReceiveTest\\ReceiveTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Florian\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
   "logs": []
 }
