@@ -188,13 +188,14 @@ namespace RobControl
             // 
             // pictureBox1
             // 
-            this.canvas.Image = ((System.Drawing.Image)(resources.GetObject("canvas.Image")));
-            this.canvas.Location = new System.Drawing.Point(12, 12);
-            this.canvas.Name = "canvas";
-            this.canvas.Size = new System.Drawing.Size(412, 426);
-            this.canvas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.canvas.TabIndex = 2;
-            this.canvas.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(412, 426);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
             // UI
             // 
@@ -207,7 +208,6 @@ namespace RobControl
             this.Controls.Add(this.groupBox1);
             this.Name = "UI";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.UI_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

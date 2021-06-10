@@ -15,7 +15,7 @@ namespace RobControl
         static Node[,] grid;
         public static Node[,] CreateGrid(Position startPos, Position targetPos) //pfusch it in
         {
-            img = new Bitmap(@"C:\Users\Florian\Desktop\Robotino\mqtt_subscriber\111links2.bmp");
+            img = new Bitmap(@"C:\Users\manue\OneDrive\Dokumente\Htl Neufelden\4. Klasse\Maturaprojekt\Robotino_Pozyx\mqtt_subscriber\111links2.bmp");
             grid = new Node[img.Width, img.Height];
             System.Diagnostics.Debug.WriteLine("gridSizeXY: " + img.Width + "x"+ img.Height);
 
