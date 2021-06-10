@@ -32,7 +32,7 @@ namespace RobControl
             while (true)
             {
                 Draw();
-                System.Diagnostics.Debug.WriteLine("not nuasfasdfadll");
+                System.Diagnostics.Debug.WriteLine("not nua");
             }
         }
 
@@ -61,11 +61,11 @@ namespace RobControl
             Position currentPosition = RobLogic.GetCurrentPosition();      // call this if you want the current pos
             Pen pen = new Pen(Color.Red);
 
-            g.DrawEllipse(pen, 200, 200, 4, 4);
+           // g.DrawEllipse(pen, 200, 200, 4, 4);
 
             if (RobLogic.currentPosition != null)
             {
-
+                g.DrawEllipse(pen, currentPosition.X/200,currentPosition.Y/200 , 4, 4);
                 System.Diagnostics.Debug.WriteLine("not null");
             }
             else

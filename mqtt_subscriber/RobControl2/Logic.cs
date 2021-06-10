@@ -41,11 +41,11 @@ namespace RobControl
             bool udp_status = udp_client.Connect();
             System.Diagnostics.Debug.WriteLine("udp connected: " + udp_status);
 
-            mqtt_position = new Mqtt("172.26.1.110", "position_data", this);
+            mqtt_position = new Mqtt("172.17.242.113", "position_data", this);
             bool mqtt_status = mqtt_position.Connect();
             System.Diagnostics.Debug.WriteLine("pozyx connected: " + mqtt_status);
 
-            mqtt_nfc = new Mqtt("172.26.1.110", "tag_nfc", this);
+            mqtt_nfc = new Mqtt("172.17.242.113", "tag_nfc", this);
             bool mqtt_status2 = mqtt_position.Connect();
             System.Diagnostics.Debug.WriteLine("nfc connected: " + mqtt_status2);
 
